@@ -1,0 +1,25 @@
+[project]
+name = "illustrations"
+version = "0.1.0"
+description = "Dynamic illustrations for presentations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+### -- Ruff -- ###
+
+[tool.ruff]
+line-length = 100
+select = ["ALL"]
+ignore = [
+    "C901",
+    "G004",
+    "PLR0912",
+    "PLR0913",
+    "PLR0915",
+    "PLW0603",
+    "S311",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
